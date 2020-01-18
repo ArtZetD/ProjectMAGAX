@@ -11,7 +11,9 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RegistrationComponent } from './registration/registration.component';
-import {MatDialogModule} from '@angular/material/dialog';
+import { MatDialogModule } from '@angular/material/dialog';
+import { FavService } from './fav.service';
+
 
 
 
@@ -25,9 +27,9 @@ import {MatDialogModule} from '@angular/material/dialog';
     HeaderComponent,
     FooterComponent,
     RegistrationComponent,
-    
 
-   
+
+
   ],
   imports: [
     BrowserModule,
@@ -36,7 +38,7 @@ import {MatDialogModule} from '@angular/material/dialog';
     BrowserAnimationsModule,
     MatDialogModule,
   ],
-  providers: [],
+  providers: [FavService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

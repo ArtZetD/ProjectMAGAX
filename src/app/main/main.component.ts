@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { korm } from '../../models/korm';
+import { korm, favBtns } from '../../models/korm';
+import { FavService } from '../fav.service';
 
 @Component({
   selector: 'app-main',
@@ -7,19 +8,82 @@ import { korm } from '../../models/korm';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent implements OnInit {
-item: string = 'chappi';
-images = Array<korm>();
-  constructor() { }
 
+  constructor(private favService: FavService) {
+
+  }
+  korm = new Array<korm>();
+  favBtns = new Array<favBtns>();
   ngOnInit() {
-    for (let i = 0; i < 9; i++) {
-      //console.log(localStorage.length);
+
+    this.korm = [
+      {
+        id: 0,
+        name: 'chappi',
+        price: 500,
+        type: 'dog',
+        favBtn: this.favService.favBtns[0]
+      },
+      {
+        id: 1,
+        name: 'chappi',
+        price: 500,
+        type: 'dog',
+        favBtn: this.favService.favBtns[1]
+      },
+      {
+        id: 2,
+        name: 'chappi',
+        price: 500,
+        type: 'dog',
+        favBtn: this.favService.favBtns[2]
+      },
+      {
+        id: 3,
+        name: 'chappi',
+        price: 500,
+        type: 'dog',
+        favBtn: this.favService.favBtns[3]
+      },
+      {
+        id: 4,
+        name: 'chappi',
+        price: 500,
+        type: 'dog',
+        favBtn: this.favService.favBtns[4]
+      },
+      {
+        id: 5,
+        name: 'chappi',
+        price: 500,
+        type: 'dog',
+        favBtn: this.favService.favBtns[5]
+      },
+      {
+        id: 6,
+        name: 'chappi',
+        price: 500,
+        type: 'dog',
+        favBtn: this.favService.favBtns[6]
+      },
+      {
+        id: 7,
+        name: 'chappi',
+        price: 500,
+        type: 'dog',
+        favBtn: this.favService.favBtns[7]
+      },
+      {
+        id: 8,
+        name: 'chappi',
+        price: 500,
+        type: 'dog',
+        favBtn: this.favService.favBtns[8]
+      },
       
-      //console.log(localStorage.getItem(i.toString()));
-      
-      this.images.push(JSON.parse(localStorage.getItem(i.toString())));
-      
-    }
+
+
+    ]
   }
 
 }
