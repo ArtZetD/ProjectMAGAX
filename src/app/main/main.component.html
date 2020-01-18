@@ -1,0 +1,23 @@
+<main class="main">
+  <h1 class="zago">лидеры продаж</h1>
+  <div class="grid-container">
+    <img class="best_s" src="../../assets/images/proplan.jpg" />
+    <img class="best_s" src="../../assets/images/proplan.jpg" />
+    <img class="best_s" src="../../assets/images/chappi.jpg" />
+    <img class="best_s" src="../../assets/images/chappi.jpg" />
+    <div class="">цена</div>
+    <div class="">цена</div>
+    <div class="">цена</div>
+    <div class="">цена</div>
+  </div>
+  <h1 class="zago">наши товары</h1>
+  <div class="grid-container1">
+    <ng-container *ngFor="let i of images">
+      <img class="best_s" src="../../assets/images/pic{{ i.id }}.jpg" /><br>
+      {{i.name}}<br>
+      {{i.price}}<br>
+      {{i.type}}<br>
+      
+    </ng-container>
+  </div>
+</main>

@@ -1,0 +1,19 @@
+/*работа над "подвалом" страницы*/
+.footer {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 120px;
+}
+.footer_social_nets {
+  position: relative;
+  top: 100%;
+}
+.image1 {
+  padding-left: 50px;
+  background-image: url("../../assets/images/vkontacte.jpg") no-repeat;
+}
+.image2 {
+  padding-left: 50px;
+  background-image: url("../../assets/images/twitter.jpg") no-repeat;
+}

@@ -1,0 +1,19 @@
+/*цвет всей страницы*/
+body {
+    background-color: aquamarine;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  /*работа над основной частью страницы*/
+  .main{
+      position: relative;
+      top: 10px;
+      border: solid pink;
+      border-radius: 10px;
+      width: 200px;
+  }
+
+  

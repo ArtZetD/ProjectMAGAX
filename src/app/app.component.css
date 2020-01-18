@@ -1,0 +1,147 @@
+/* вся страница*/
+ body {
+  /* background-image: url("../assets/images/back.jpg"); */
+  font-family: "Source Code Pro", monospace;
+  /* height: 100%;
+  width: 100%; */
+} 
+/*работа над шапкой сайта*/
+.header {
+  width: 100%;
+  height: 50px;
+}
+.header_nav {
+  width: 300px;
+  margin-left: 20px;
+  padding-left: 20px;
+
+  position: relative;
+  left: 80%;
+  bottom: 180px;
+}
+.header_about_us {
+  position: relative;
+  left: 50%;
+  bottom: 130px;
+
+  width: 155px;
+  height: 35px;
+}
+
+.acss {
+  text-decoration: none;
+  margin-left: 10px;
+}
+.acss:hover {
+  color: rgb(241, 146, 36);
+}
+.acss {
+  transition: 0.2s;
+}
+.header_acs {
+  position: relative;
+  width: 340px;
+
+  left: 15%;
+  bottom: 30px;
+}
+.header_back_arrow {
+  position: relative;
+  bottom: 200px;
+}
+.acss_1 {
+  margin-left: 5px;
+  transition: 0.2s;
+}
+.acss_1:hover {
+  color: rgb(241, 146, 36);
+}
+/*******************************************/
+/*      работа над выпадающем мееню        */
+/*******************************************/
+
+body {
+  margin: 0;
+}
+
+.header_menu {
+  width: 660px;
+  margin: 0 auto 40px;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.header_menu {
+  position: relative;
+  right: 500px;
+  bottom: 50px;
+
+  width: 500px;
+}
+.header_topmenu > li {
+  display: inline-block;
+  margin-right: 20px;
+  position: relative;
+  left: 100px;
+}
+.header_topmenu > li:last-child {
+  margin-right: 0;
+}
+.header_nav_a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  outline: none;
+  font-family: "Lora", serif;
+}
+.fa {
+  font-family: "FontAwesome";
+  color: inherit;
+  padding-left: 10px;
+}
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+.header_menu .submenu {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.2s;
+}
+.header_menu ul li:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+  color: rgb(241, 146, 36);
+}
+
+/*работа над "подвалом" страницы*/
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 120px;
+}
+.footer_social_nets {
+  position: absolute;
+  top: 100%;
+}
+.image1 {
+  padding-left: 50px;
+  background-image: url("../assets/images/vkontacte.jpg") no-repeat;
+}
+.image2 {
+  padding-left: 50px;
+  background-image: url("../assets/images/twitter.jpg") no-repeat;
+}
+.footer_feedbacks {
+  width: 500px;
+
+  position: absolute;
+  top: 100%;
+  left: 400px;
+}
