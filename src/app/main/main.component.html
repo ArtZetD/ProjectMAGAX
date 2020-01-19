@@ -12,12 +12,22 @@
   </div>
   <h1 class="zago">наши товары</h1>
   <div class="grid-container1">
-    <ng-container *ngFor="let i of images">
-      <img class="best_s" src="../../assets/images/pic{{ i.id }}.jpg" /><br>
-      {{i.name}}<br>
-      {{i.price}}<br>
-      {{i.type}}<br>
-      
+    <ng-container *ngFor="let i of korm" class="template">
+      <img class="best_s" src="{{ i.imgSrc }}" />
+      <!-- <div class="inter">
+        <div class="name">
+          <br />
+          {{ i.name }}
+        </div>
+        <div class="price">
+          <br />
+          {{ i.price }}
+        </div>
+        <div class="type">
+          <br />
+          {{ i.type }}
+        </div>
+      </div> -->
     </ng-container>
   </div>
 </main>

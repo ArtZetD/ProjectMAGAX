@@ -8,57 +8,68 @@
 /***********************************/
 /**********************************/
 .main {
-    position: absolute;
-    left: 40px;
-    height: 300px;
-    width: 800px;
-  }
-  /*работа над лидерами продажи*/
-  .grid-container {
-    position: relative;
-    left: 600px;
-    width: 180px;
-    height: 180px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 160px 20px;
-    grid-row-gap: 15px 89px;
-    grid-column-gap: 1em;
-  }
-  .best_s {
-    width: 180px;
-    height: 180px;
-    /* background-image: url("../../assets/images/chappi.jpg") */
-  }
+  position: absolute;
+  left: 40px;
+  height: 300px;
+  width: 800px;
+}
+/*работа над лидерами продажи*/
+.grid-container {
+  position: relative;
+  left: 600px;
+  width: 180px;
+  height: 180px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 160px 20px;
+  grid-row-gap: 15px 89px;
+  grid-column-gap: 1em;
+}
+.best_s {
+  width: 180px;
+  height: 180px;
+  /* background-image: url("../../assets/images/chappi.jpg") */
+}
 
-  /*общая работа*/
-  .zago {
-    position: relative;
-    left: 700px;
-  }
-  /*работа над нашими товарами */
-  .grid-container1 {
-    position: relative;
-    left: 600px;
-    top: 40px;
-    width: 100%;
-    height: 180px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 180px 180px;
-    grid-row-gap: 1em;
-    grid-column-gap: 1em;
-  }
-  img:hover {
-    opacity: 0.7; /* FF, Opera, Safari, Chrome */
-  }
-  
-  img:hover {
-    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=70); /* IE7 */
-    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=70); /* IE8, хотя несмотря на заверения майкрософт вроде как и предыдущий вариант в 8-м работает - filter:prodig:... */
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
+/*общая работа*/
+.zago {
+  position: relative;
+  left: 700px;
+}
+/*работа над нашими товарами */
+.grid-container1 {
+  position: relative;
+  left: 600px;
+  top: 40px;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
+  grid-row-gap: 1em;
+  grid-column-gap: 1em;
+}
+img:hover {
+  opacity: 0.7; /* FF, Opera, Safari, Chrome */
+}
+
+img:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=70); /* IE7 */
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=70); /* IE8, хотя несмотря на заверения майкрософт вроде как и предыдущий вариант в 8-м работает - filter:prodig:... */
+}
+
+a {
+  text-decoration: none;
+}
+/***************************/
+/*работа над шаблонам ебать*/
+
+/* .inter{
+  position: relative;
+  left: 600px;
+  width: 150px;
+  height: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat( 1fr);
+} */

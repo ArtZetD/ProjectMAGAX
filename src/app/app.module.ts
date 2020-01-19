@@ -13,6 +13,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RegistrationComponent } from './registration/registration.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { FavService } from './fav.service';
+import { BasketComponent } from './basket/basket.component';
+
 
 
 
@@ -27,6 +29,8 @@ import { FavService } from './fav.service';
     HeaderComponent,
     FooterComponent,
     RegistrationComponent,
+    BasketComponent,
+
 
 
 
