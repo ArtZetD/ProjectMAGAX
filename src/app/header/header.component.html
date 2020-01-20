@@ -32,14 +32,12 @@
   </nav>
   <div class="registration">
     <!-- <a routerLink="registration" class="enter"> вход </a> -->
-    <ng-container *ngIf="this.user.number == '';else showNumber">
+    <ng-container *ngIf="this.user.number == ''; else showNumber">
       <a (click)="openDialog()" class="enter"> вход </a>
     </ng-container>
     <ng-template #showNumber>
-      {{this.user.number}}
+      {{ this.user.number }}
     </ng-template>
   </div>
-  <div class="backet">
-    <img > козина
-  </div>
+  <div class="backet"><img /> козина</div>
 </header>

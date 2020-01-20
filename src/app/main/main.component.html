@@ -13,21 +13,30 @@
   <h1 class="zago">наши товары</h1>
   <div class="grid-container1">
     <ng-container *ngFor="let i of korm" class="template">
-      <img class="best_s" src="{{ i.imgSrc }}" />
-      <!-- <div class="inter">
-        <div class="name">
-          <br />
-          {{ i.name }}
+      <div class="in-template">
+        <div>
+          <img class="best_s" src="{{ i.imgSrc }}" />
         </div>
-        <div class="price">
-          <br />
-          {{ i.price }}
+        <div class="inter">
+          <div class="name">
+            <br />
+            {{ i.name }}
+          </div>
+          <div class="price">
+            <br />
+            {{ i.price }}
+          </div>
+          <div class="type">
+            <br />
+            {{ i.type }}
+          </div>
+          <div class="btn">
+            <button (click)='fav(book.id)' class="butn" *ngIf='korm.favBtn'    class="btn btn-success">в корзину</button>
+            <button  (click)='fav(book.id)'class="butn" *ngIf='!korm.favBtn'   class="btn btn-success">в корзине</button>
+          </div>
         </div>
-        <div class="type">
-          <br />
-          {{ i.type }}
-        </div>
-      </div> -->
+      </div>
+      
     </ng-container>
   </div>
 </main>

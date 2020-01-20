@@ -63,13 +63,7 @@ a {
 }
 /***************************/
 /*работа над шаблонам ебать*/
-
-/* .inter{
-  position: relative;
-  left: 600px;
-  width: 150px;
-  height: 100px;
+.in-template {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat( 1fr);
-} */
+  grid-template-columns: repeat(2, 1fr);
+}

@@ -1,9 +1,15 @@
-/* вся страница*/
+/*вся страница*/
 body {
   background-image: url("assets/images/back.jpg");
   font-family: "Source Code Pro", monospace;
-  height: 100%;
-  width: 100%;
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: auto;
+  width: auto;
+  overflow-x:hidden;  /*для горизонтального*/
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
