@@ -2,129 +2,28 @@ a {
   text-decoration: none;
   color: black;
 }
+a:link{
+  color: white;
+}
+/*галава*/
+.golova {
+  
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(9, 1fr);
+  grid-column-gap: 20px;
+}
 .header {
-  width: 100%;
-  height: 50px;
-  overflow-y: hidden; /*для вертикального*/
-  overflow-x:hidden;  /*для горизонтального*/
-}
-.header_nav {
-  width: 300px;
-  margin-left: 20px;
-  padding-left: 20px;
-
-  position: relative;
-  left: 80%;
-  bottom: 180px;
-}
-.header_about_us {
-  position: relative;
-  left: 50%;
-  bottom: 130px;
-
-  width: 155px;
-  height: 35px;
-}
-
-.acss {
-  position: relative;
-  text-decoration: none;
-  margin-left: 10px;
-  left: 1100px;
-  bottom: 34px;
-}
-.acss:hover {
-  color: rgb(241, 146, 36);
-}
-.acss {
-  transition: 0.2s;
-}
-.header_acs {
-  position: relative;
-  width: 340px;
-
-  left: 15%;
-  bottom: 30px;
-}
-.header_back_arrow {
-  position: relative;
-  bottom: 200px;
-}
-.acss_1 {
-  margin-left: 5px;
-  transition: 0.2s;
-}
-.acss_1:hover {
-  color: rgb(241, 146, 36);
-}
-/*******************************************/
-/*      работа над выпадающем мееню        */
-/*******************************************/
-
-body {
-  margin: 0;
-}
-
-.header_menu {
-  width: 660px;
-  margin: 0 auto 40px;
-}
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.header_menu {
-  position: relative;
-  right: 500px;
-  bottom: 50px;
-
-  width: 500px;
-}
-.header_topmenu > li {
+  position: static;
+  width: auto;
+  color: white;
+  background-color: rgba(32, 118, 171, 0.98);
   display: inline-block;
-  margin-right: 20px;
-  position: relative;
-  left: 100px;
+  width: auto;
+  height: auto;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
-.header_topmenu > li:last-child {
-  margin-right: 0;
-}
-.header_nav_a {
-  display: block;
-  padding: 10px 15px;
-  text-decoration: none;
-  outline: none;
-  font-family: "Lora", serif;
-}
-.fa {
-  font-family: "FontAwesome";
-  color: inherit;
-  padding-left: 10px;
-}
-.submenu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  z-index: 10;
-}
-.header_menu .submenu {
-  visibility: hidden;
-  opacity: 0;
-  transition: 0.2s;
-}
-.header_menu ul li:hover .submenu {
-  visibility: visible;
-  opacity: 1;
-  color: rgb(241, 146, 36);
-}
-/*************************************************/
-/*             работа над регистрацией           */
-/*************************************************/
-
-.registration {
-  position: relative;
-  left: 90%;
-  bottom: 135px;
+.f {
+  font-size: xX-large;
 }

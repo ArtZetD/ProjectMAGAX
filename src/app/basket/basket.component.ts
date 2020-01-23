@@ -25,4 +25,5 @@ export class BasketComponent implements OnInit {
     this.favService.favBtns[id] = true;
 
   }
+   countKorm: number = 1
 }

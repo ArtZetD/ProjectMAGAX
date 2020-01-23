@@ -1,11 +1,15 @@
 .reg {
-  background-color: wheat;
-  width: 380px;
-  height: 532px;
-  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  overflow-y: hidden;
+  overflow-y: hidden;
+ 
 }
-.authorization {
+.authorization1 {
   margin-left: 50px;
   border-radius: 4px;
-  
 }
+.mat-dialog-container{
+  background-color: aquamarine;
+}
+

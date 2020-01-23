@@ -9,5 +9,6 @@ export class FavService{
     searchedKorm: korm = null;
 
     //Кнопки
-    favBtns: boolean[] = [true, true, true, true];
+    favBtns: boolean[] = [true, true, true, true,true, true, true, true, true];
+    faBtns: boolean[] = [true, true, true, true,true, true, true, true, true];
 }

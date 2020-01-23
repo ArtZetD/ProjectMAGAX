@@ -1,22 +1,22 @@
-<div class="reg">
+<div class="authorization1">
   <h2 mat-dialog-title class="authorization">Авторизация</h2>
   <br />
   <div mat-dialog-content>
-    <h4  class="authorization">Телефон</h4>
+    <h4  class="authorization">логин</h4>
     <br />
     <input
-    [(ngModel)]="this.data.number"
+    [(ngModel)]="user.number"
       type="text"
       class="authorization"
-      placeholder="+7 (123) 456-78-90"
+
     /><br />
 
     <h4 class="authorization">пароль</h4>
     <br />
-    <input [(ngModel)]="this.data.password" type="password" class="authorization" />
+    <input [(ngModel)]="user.password" type="password" class="authorization" />
   </div>
   <div mat-dialog-actions>
     <button mat-button (click)="onNoClick()">No Thanks</button>
-    <button mat-button [mat-dialog-close]="data" cdkFocusInitial>Ok</button>
+    <button mat-button [mat-dialog-close]="user" cdkFocusInitial>Ok</button>
   </div>
 </div>

@@ -1,16 +1,16 @@
 
-export class korm {
+export class dog {
     id: number;
     imgSrc: string;
     name: string;
     price: number;
-    type: string; 
+    type: string;
     favBtn: boolean;
     caunt: number;
     countKorm: number
-    
+
 }
-export class favBtns{
+export class favBtns {
     id: number;
     favBtn: boolean;
 }

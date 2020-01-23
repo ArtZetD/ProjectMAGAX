@@ -12,9 +12,11 @@ export class RegistrationComponent implements OnInit {
 
   ngOnInit() {
   }
+  user: User = new User();
   constructor(
     public dialogRef: MatDialogRef<RegistrationComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: User) {}
+    // @Inject(MAT_DIALOG_DATA) public data: User
+    ) {}
 
   onNoClick(): void {
     this.dialogRef.close();

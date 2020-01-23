@@ -1,12 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { FormsModule } from '@angular/forms';
 import { MainComponent } from './main/main.component';
-import { AboutComponent } from './about/about.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -14,6 +12,9 @@ import { RegistrationComponent } from './registration/registration.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { FavService } from './fav.service';
 import { BasketComponent } from './basket/basket.component';
+import { ShopsComponent } from './shops/shops.component';
+import { CrutchComponent } from './crutch/crutch.component';
+import { dogService } from './dog.service';
 
 
 
@@ -25,11 +26,12 @@ import { BasketComponent } from './basket/basket.component';
     AppComponent,
     ContactsComponent,
     MainComponent,
-    AboutComponent,
     HeaderComponent,
     FooterComponent,
     RegistrationComponent,
     BasketComponent,
+    ShopsComponent,
+    CrutchComponent,
 
 
 
@@ -42,7 +44,7 @@ import { BasketComponent } from './basket/basket.component';
     BrowserAnimationsModule,
     MatDialogModule,
   ],
-  providers: [FavService],
+  providers: [FavService,dogService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

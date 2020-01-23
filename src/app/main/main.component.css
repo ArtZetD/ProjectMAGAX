@@ -9,9 +9,9 @@
 /**********************************/
 .main {
   position: absolute;
-  left: 40px;
-  height: 300px;
-  width: 800px;
+  /* bottom: 80px; */
+  height: auto;
+  width: auto;
 }
 /*работа над лидерами продажи*/
 .grid-container {
@@ -40,7 +40,7 @@
 .grid-container1 {
   position: relative;
   left: 600px;
-  top: 40px;
+  top: 5px;
   width: 100%;
   height: auto;
   display: grid;
@@ -62,8 +62,15 @@ a {
   text-decoration: none;
 }
 /***************************/
-/*работа над шаблонам ебать*/
+/*работа над шаблонам */
 .in-template {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  width: auto;
+  height: auto;
+  border-radius: 7px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); /* Параметры тени */
+  background-color: rgb(142, 182, 214);
+  justify-content: center;
+  align-items: center;
 }

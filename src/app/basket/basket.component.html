@@ -1,3 +1,46 @@
-<div class="">
-    корзина ебать
-</div>
+<ng-container *ngFor="let i of korm" class="template">
+  <div class="in-template">
+    <div>
+      <img class="best_s" src="{{ i.imgSrc }}" />
+    </div>
+    <div class="inter">
+      <div class="name">
+        <br />
+        {{ i.name }}
+      </div>
+      <div class="price">
+        <br />
+        {{ this.i.price * countKorm }} рублей
+      </div>
+      <div class="type">
+        <br />
+        {{ i.type }}
+      </div>
+      <div class="btn">
+        <button
+          (click)="fav(i.id)"
+          class="butn"
+          *ngIf="i.favBtn"
+          class="btn btn-danger"
+        >
+          в корзину
+        </button>
+        <button
+          (click)="fav(i.id)"
+          class="butn"
+          *ngIf="!i.favBtn"
+          class="btn btn-danger"
+        >
+          удалить из корзины
+        </button>
+        
+        <input
+          type="number"
+          minlength="0"
+          [(ngModel)]="countKorm"
+          placeholder=" "
+        />
+      </div>
+    </div>
+  </div>
+</ng-container>

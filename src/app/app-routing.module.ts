@@ -3,17 +3,21 @@ import { Routes, RouterModule } from '@angular/router';
 import { ContactsComponent } from './contacts/contacts.component';
 import { HeaderComponent } from './header/header.component';
 import { MainComponent } from './main/main.component';
-import { AboutComponent } from './about/about.component';
+import { CrutchComponent } from './crutch/crutch.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { BasketComponent } from './basket/basket.component';
+import { ShopsComponent } from './shops/shops.component';
+
 
 
 
 const routes: Routes = [
 {path: 'contacts', component: ContactsComponent},
 {path: '', component: MainComponent},
-{path: 'about', component: AboutComponent},
 {path: 'registration', component: RegistrationComponent},
-
+{path: 'basket', component: BasketComponent},
+{path: 'shops', component: ShopsComponent},
+{path: 'crutch', component: CrutchComponent},
 ];
 
 @NgModule({

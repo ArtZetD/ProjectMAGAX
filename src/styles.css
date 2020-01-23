@@ -1,15 +1,19 @@
-/*вся страница*/
-body {
-  background-image: url("assets/images/back.jpg");
-  font-family: "Source Code Pro", monospace;
-}
-html,
-body {
-  height: auto;
-  width: auto;
-  overflow-x:hidden;  /*для горизонтального*/
+
+html {
+  position: relative;
+  min-height: 100%;
 }
 body {
-  margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(238, 222, 200);
+}
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
 }

@@ -1,0 +1,30 @@
+.in-iemplate {
+  background-color: turquoise;
+}
+.grid-container1 {
+  position: relative;
+  left: 600px;
+  top: 5px;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
+  grid-row-gap: 1em;
+  grid-column-gap: 1em;
+}
+img:hover {
+  opacity: 0.7; /* FF, Opera, Safari, Chrome */
+}
+
+img:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=70); /* IE7 */
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=70); /* IE8, хотя несмотря на заверения майкрософт вроде как и предыдущий вариант в 8-м работает - filter:prodig:... */
+}
+
+a {
+  text-decoration: none;
+}
+footer{
+  opacity: 1;
+}

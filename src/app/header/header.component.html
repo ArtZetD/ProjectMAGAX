@@ -1,43 +1,25 @@
 <header class="header">
-  <div class="header_logo">
-    <h3><a routerLink="">Название магазина</a></h3>
+  <div class="golova">
+    <div class="header_logo">
+      <h3><a routerLink="">Rats&Cats</a></h3>
+    </div>
+
+    <div class="f"><a routerLink="crutch"> аксессуары </a> <br /></div>
+    <div class="f"><a routerLink="">корм для животных</a> <br /></div>
+    <div class="f"><a routerLink="">скидки и акции </a> <br /></div>
+    <div class="f"><a routerLink="contacts">контакты</a> <br /></div>
+    <div class="f"><a routerLink="shops"> магазины</a> <br /></div>
+    <div class="backet" class="f"><a routerLink="basket">корзина</a></div>
+    <div class="registration" class="f">
+      <ng-container
+        *ngIf="!this.user || this.user.number == ''; else showNumber"
+      >
+        <a (click)="openDialog()" class="enter" class="f"> вход </a>
+      </ng-container>
+      <ng-template #showNumber>
+        {{ this.user.number }}
+      </ng-template>
+    </div>
+    <br />
   </div>
-  <nav class="header_menu">
-    <ul class="header_topmenu">
-      <li>
-        <a href="#">аксессуары </a>
-        <ul class="submenu">
-          <li><a class="header_nav_a" href="">Домики</a></li>
-          <li><a class="header_nav_a" href="">ошейники и поводки</a></li>
-          <li><a class="header_nav_a" href="">украшения</a></li>
-          <li><a class="header_nav_a" href="">игрушки</a></li>
-        </ul>
-      </li>
-      <li><a class="header_nav_a" href="#">корм для животных</a></li>
-      <li>
-        <a class="header_nav_a" href="#"
-          >скидки и акции<i class="fa fa-angle-down"></i
-        ></a>
-      </li>
-      <li>
-        <a routerLink="contacts" class="acss"> контакты</a>
-      </li>
-      <li>
-        <a routerLink="about" class="acss"> о нас</a>
-      </li>
-      <li>
-        <a href="shops.html" class="acss"> магазины</a>
-      </li>
-    </ul>
-  </nav>
-  <div class="registration">
-    <!-- <a routerLink="registration" class="enter"> вход </a> -->
-    <ng-container *ngIf="this.user.number == ''; else showNumber">
-      <a (click)="openDialog()" class="enter"> вход </a>
-    </ng-container>
-    <ng-template #showNumber>
-      {{ this.user.number }}
-    </ng-template>
-  </div>
-  <div class="backet"><img /> козина</div>
 </header>

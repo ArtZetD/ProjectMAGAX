@@ -6,8 +6,8 @@
 
 }
 .footer_social_nets {
-  position: relative;
-  top: 100%;
+position: absolute;
+top: 100%;
 }
 .image1 {
   padding-left: 50px;

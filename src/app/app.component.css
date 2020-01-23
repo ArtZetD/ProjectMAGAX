@@ -7,7 +7,7 @@
 } 
 /*работа над шапкой сайта*/
 .header {
-  width: 100%;
+  width: auto;
   height: 50px;
 }
 .header_nav {
