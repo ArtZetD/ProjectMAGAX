@@ -15,15 +15,22 @@ export class BasketComponent implements OnInit {
   ngOnInit() {
     this.korm = this.favService.favKorms;
   }
-  //Удаление из избранного
+  //Удаление из избранного 
   fav(id: number) {
 
     const delKorm = this.favService.favKorms.find(el => el.id === id);
     if (delKorm != null) {
       this.favService.favKorms.splice(this.favService.favKorms.indexOf(delKorm), 1);
     }
-    this.favService.favBtns[id] = true;
+    if (id < 9) {
+      this.favService.favBtns[id] = true;
+    }
+    else {
+      let index = id - 9;
+      this.favService.faBtns[index] = true;
+    }
+
 
   }
-   countKorm: number = 1
+  countKorm: number = 1
 }
