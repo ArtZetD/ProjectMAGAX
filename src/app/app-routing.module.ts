@@ -7,6 +7,7 @@ import { CrutchComponent } from './crutch/crutch.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { BasketComponent } from './basket/basket.component';
 import { ShopsComponent } from './shops/shops.component';
+import { SalesComponent } from './sales/sales.component';
 
 
 
@@ -18,6 +19,7 @@ const routes: Routes = [
 {path: 'basket', component: BasketComponent},
 {path: 'shops', component: ShopsComponent},
 {path: 'crutch', component: CrutchComponent},
+{path: 'sales', component: SalesComponent}
 ];
 
 @NgModule({

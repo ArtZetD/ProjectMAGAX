@@ -2,12 +2,11 @@ a {
   text-decoration: none;
   color: black;
 }
-a:link{
+a:link {
   color: white;
 }
 /*галава*/
 .golova {
-  
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: repeat(9, 1fr);
@@ -26,4 +25,18 @@ a:link{
 }
 .f {
   font-size: xX-large;
+  
 }
+.f:hover{
+  cursor: pointer;
+}
+@media screen and (max-width: 1199px) {
+  .contain {
+    right: 15%;
+  }
+
+  .golova {
+    width: 100%;
+  }
+}
+

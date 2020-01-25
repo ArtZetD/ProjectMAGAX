@@ -1,0 +1,14 @@
+.empty {
+  border: 5px dashed grey;
+  width: 1200px;
+  height: 400px;
+  margin: 10px auto 10px auto;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.text-non {
+  color: grey;
+  font-size: xx-large;
+}

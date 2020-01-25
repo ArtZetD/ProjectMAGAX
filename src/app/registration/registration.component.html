@@ -2,21 +2,18 @@
   <h2 mat-dialog-title class="authorization">Авторизация</h2>
   <br />
   <div mat-dialog-content>
-    <h4  class="authorization">логин</h4>
+    <h4 class="authorization">логин</h4>
     <br />
-    <input
-    [(ngModel)]="user.number"
-      type="text"
-      class="authorization"
-
-    /><br />
+    <input [(ngModel)]="user.number" type="text" class="authorization" /><br />
 
     <h4 class="authorization">пароль</h4>
     <br />
     <input [(ngModel)]="user.password" type="password" class="authorization" />
   </div>
   <div mat-dialog-actions>
-    <button mat-button (click)="onNoClick()">No Thanks</button>
-    <button mat-button [mat-dialog-close]="user" cdkFocusInitial>Ok</button>
+    <button mat-button (click)="onNoClick()">Отмена</button>
+    <button mat-button [mat-dialog-close]="user" cdkFocusInitial>
+      Авторизоваться
+    </button>
   </div>
 </div>

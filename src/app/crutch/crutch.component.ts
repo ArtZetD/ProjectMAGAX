@@ -24,7 +24,7 @@ export class CrutchComponent implements OnInit {
         type: 'для собак',
         favBtn: this.dogService.faBtns[0],
         caunt: 1,
-        countKorm: 0
+        countKorm: 1
       },
       {
         id: 10,
@@ -44,7 +44,7 @@ export class CrutchComponent implements OnInit {
         type: 'для собак',
         favBtn: this.dogService.faBtns[2],
         caunt: 1,
-        countKorm: 2
+        countKorm: 1
       },
       {
         id: 12,
@@ -54,7 +54,7 @@ export class CrutchComponent implements OnInit {
         type: 'для собак',
         favBtn: this.dogService.faBtns[3],
         caunt: 1,
-        countKorm: 3
+        countKorm: 1
       },
       {
         id: 13,
@@ -64,7 +64,7 @@ export class CrutchComponent implements OnInit {
         type: 'для собакg',
         favBtn: this.dogService.faBtns[4],
         caunt: 1,
-        countKorm: 4
+        countKorm: 1
       },
       {
         id: 14,
@@ -74,7 +74,7 @@ export class CrutchComponent implements OnInit {
         type: 'для собак',
         favBtn: this.dogService.faBtns[5],
         caunt: 1,
-        countKorm: 5
+        countKorm: 1
       },
       {
         id: 15,
@@ -84,7 +84,7 @@ export class CrutchComponent implements OnInit {
         type: 'для собак',
         favBtn: this.dogService.faBtns[6],
         caunt: 1,
-        countKorm: 6
+        countKorm: 1
       },
       {
         id: 16,
@@ -94,7 +94,7 @@ export class CrutchComponent implements OnInit {
         type: 'для собак',
         favBtn: this.dogService.faBtns[7],
         caunt: 1,
-        countKorm: 7
+        countKorm: 1
       },
       {
         id: 17,
@@ -104,7 +104,7 @@ export class CrutchComponent implements OnInit {
         type: 'для собак',
         favBtn: this.dogService.faBtns[8],
         caunt: 1,
-        countKorm: 8
+        countKorm: 1
       },
     ];
     this.korm.forEach(element => {

@@ -19,18 +19,18 @@ export class MainComponent implements OnInit {
       {
         id: 0,
         imgSrc: './assets/images/pic0.jpg',
-        name: 'proplan',
-        price: 500,
-        type: 'для котят',
+        name: 'ROYAL CANIN',
+        price: 945,
+        type: 'для собак',
         favBtn: this.favService.favBtns[0],
         caunt: 1,
-        countKorm: 0
+        countKorm: 1
       },
       {
         id: 1,
         imgSrc: './assets/images/pic1.jpg',
-        name: 'pedigree',
-        price: 500,
+        name: 'Hills',
+        price: 540,
         type: 'для собак',
         favBtn: this.favService.favBtns[1],
         caunt: 1,
@@ -39,72 +39,72 @@ export class MainComponent implements OnInit {
       {
         id: 2,
         imgSrc: './assets/images/pic2.jpg',
-        name: 'cesar',
-        price: 500,
+        name: 'Hills',
+        price: 800,
         type: 'для собак',
         favBtn: this.favService.favBtns[2],
         caunt: 1,
-        countKorm: 2
+        countKorm: 1
       },
       {
         id: 3,
         imgSrc: './assets/images/pic3.jpg',
-        name: 'royal canin',
-        price: 500,
-        type: 'для котят',
+        name: 'DogChow',
+        price: 760,
+        type: 'для собак',
         favBtn: this.favService.favBtns[3],
         caunt: 1,
-        countKorm: 3
+        countKorm: 1
       },
       {
         id: 4,
         imgSrc: './assets/images/pic4.jpg',
-        name: 'chappi',
-        price: 500,
+        name: 'DogChow',
+        price: 1200,
         type: 'для собак',
         favBtn: this.favService.favBtns[4],
         caunt: 1,
-        countKorm: 4
+        countKorm: 1
       },
       {
         id: 5,
         imgSrc: './assets/images/pic5.jpg',
-        name: 'big dog',
-        price: 500,
+        name: 'PRO PLAN',
+        price: 1350,
         type: 'для собак',
         favBtn: this.favService.favBtns[5],
         caunt: 1,
-        countKorm: 5
+        countKorm: 1
       },
       {
         id: 6,
         imgSrc: './assets/images/pic6.jpg',
-        name: 'pedigree',
-        price: 500,
+        name: 'ROYAL CANIN',
+        price: 800,
         type: 'для собак',
         favBtn: this.favService.favBtns[6],
         caunt: 1,
-        countKorm: 6
+        countKorm: 1
       },
       {
-        id: 7,
+        id: 7, 
         imgSrc: './assets/images/pic7.jpg',
-        name: 'ryal canin',
-        price: 500,
+        name: 'ROYAL CANIN',
+        price: 760,
         type: 'для собак',
         favBtn: this.favService.favBtns[7],
         caunt: 1,
-        countKorm: 7
+        countKorm: 1
       },
       {
         id: 8,
         imgSrc: './assets/images/pic8.jpg',
-        name: 'mera',
-        price: 500,
+        name: 'ROYAL CANIN',
+        price: 950,
         type: 'для собак',
         favBtn: this.favService.favBtns[8],
         caunt: 1,
-        countKorm: 8
+        countKorm: 1
       },
     ];
     this.korm.forEach(element => {

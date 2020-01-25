@@ -1,19 +1,23 @@
 /*цвет всей страницы*/
 body {
-    background-color: aquamarine;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  /*работа над основной частью страницы*/
-  .main{
-      position: relative;
-      top: 10px;
-      border: solid pink;
-      border-radius: 10px;
-      width: 200px;
-  }
+  background-color: aquamarine;
+}
 
-  
+a {
+  text-decoration: none;
+}
+
+/*работа над основной частью страницы*/
+.main {
+  position: relative;
+  top: 10px;
+  border: solid pink;
+  border-radius: 10px;
+  width: 200px;
+  margin-left: 30%;
+  /* width: auto;
+  height: auto; */
+  border-radius: 7px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); /* Параметры тени */
+  background-color: rgb(213, 208, 231);
+}

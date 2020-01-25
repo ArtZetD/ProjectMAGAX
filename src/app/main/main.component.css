@@ -28,7 +28,6 @@
 .best_s {
   width: 180px;
   height: 180px;
-  /* background-image: url("../../assets/images/chappi.jpg") */
 }
 
 /*общая работа*/
@@ -66,6 +65,7 @@ a {
 .in-template {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  /* grid-template-columns: repeat(auto-fill, 100px); */
   width: auto;
   height: auto;
   border-radius: 7px;
@@ -73,4 +73,9 @@ a {
   background-color: rgb(142, 182, 214);
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width: 1199px) {
+  .in-template {
+    grid-template-columns: repeat(auto-fill, 100px);
+  }
 }

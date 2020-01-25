@@ -1,44 +1,46 @@
 <main class="main">
-  <h1 class="zago">лидеры продаж</h1>
-  <div class="grid-container1">
-    <ng-container *ngFor="let i of korm" class="template">
-      <div class="in-template">
-        <div>
-          <img class="best_s" src="{{ i.imgSrc }}" />
+  <div class="lox">
+    <h1 class="zago">лидеры продаж</h1>
+    <div class="grid-container1">
+      <ng-container *ngFor="let i of korm" class="template">
+        <div class="in-template">
+          <div>
+            <img class="best_s" src="{{ i.imgSrc }}" />
+          </div>
+          <div class="inter">
+            <div class="name">
+              <br />
+              {{ i.name }}
+            </div>
+            <div class="price">
+              <br />
+              {{ i.price }} рублей
+            </div>
+            <div class="type">
+              <br />
+              {{ i.type }}
+            </div>
+            <div class="btn">
+              <button
+                (click)="fav(i.id)"
+                class="butn"
+                *ngIf="i.favBtn"
+                class="btn btn-secondary"
+              >
+                в корзину
+              </button>
+              <button
+                (click)="fav(i.id)"
+                class="butn"
+                *ngIf="!i.favBtn"
+                class="btn btn-success"
+              >
+                в корзине
+              </button>
+            </div>
+          </div>
         </div>
-        <div class="inter">
-          <div class="name">
-            <br />
-            {{ i.name }}
-          </div>
-          <div class="price">
-            <br />
-            {{ i.price }}
-          </div>
-          <div class="type">
-            <br />
-            {{ i.type }}
-          </div>
-          <div class="btn">
-            <button
-              (click)="fav(i.id)"
-              class="butn"
-              *ngIf="i.favBtn"
-              class="btn btn-secondary"
-            >
-              в корзину
-            </button>
-            <button
-              (click)="fav(i.id)"
-              class="butn"
-              *ngIf="!i.favBtn"
-              class="btn btn-success"
-            >
-              в корзине
-            </button>
-          </div>
-        </div>
-      </div>
-    </ng-container>
+      </ng-container>
+    </div>
   </div>
 </main>

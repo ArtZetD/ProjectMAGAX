@@ -10,7 +10,7 @@
       </div>
       <div class="price">
         <br />
-        {{ this.i.price * countKorm }} рублей
+        {{ this.i.price * i.countKorm }} рублей
       </div>
       <div class="type">
         <br />
@@ -33,14 +33,24 @@
         >
           удалить из корзины
         </button>
-        
+
         <input
           type="number"
           minlength="0"
-          [(ngModel)]="countKorm"
+          [(ngModel)]="i.countKorm"
           placeholder=" "
         />
       </div>
     </div>
   </div>
 </ng-container>
+<div class="buy" *ngIf="this.favService.favKorms.length != 0">
+  <button (click)= 'delete()'>купить</button>
+  <div class="">
+    Стоимость {{this.sum}}
+  </div>
+</div>
+
+<div *ngIf="this.favService.favKorms.length == 0" class="empty rounded">
+  <div class="text-non">Ваша корзина пуста.</div>
+</div>

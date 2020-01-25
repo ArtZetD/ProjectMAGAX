@@ -15,6 +15,7 @@ import { BasketComponent } from './basket/basket.component';
 import { ShopsComponent } from './shops/shops.component';
 import { CrutchComponent } from './crutch/crutch.component';
 import { dogService } from './dog.service';
+import { SalesComponent } from './sales/sales.component';
 
 
 
@@ -32,6 +33,7 @@ import { dogService } from './dog.service';
     BasketComponent,
     ShopsComponent,
     CrutchComponent,
+    SalesComponent,
 
 
 
@@ -48,3 +50,4 @@ import { dogService } from './dog.service';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+

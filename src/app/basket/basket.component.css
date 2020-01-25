@@ -25,6 +25,31 @@ img:hover {
 a {
   text-decoration: none;
 }
-footer{
+footer {
   opacity: 1;
+}
+.empty {
+  border: 5px dashed grey;
+  width: 1200px;
+  height: 400px;
+  margin: 10px auto 10px auto;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.text-non {
+  color: grey;
+  font-size: xx-large;
+}
+.in-template {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: auto;
+  height: auto;
+  border-radius: 7px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); /* Параметры тени */
+  background-color: rgb(142, 182, 214);
+  justify-content: center;
+  align-items: center;
 }

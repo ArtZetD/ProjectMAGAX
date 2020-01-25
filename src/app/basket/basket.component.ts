@@ -11,9 +11,21 @@ export class BasketComponent implements OnInit {
 
   constructor(private favService: FavService) { }
   korm = new Array<korm>();
-
+  //суммирование стоимости всех товаров 
   ngOnInit() {
     this.korm = this.favService.favKorms;
+    this.sum = 0;
+    this.korm.forEach(el => {
+      this.sum += el.price * el.countKorm;
+    });
+  }
+  ngAfterViewInit() {
+    this.sum = 0;
+    this.korm.forEach(el => {
+      this.sum += el.price * el.countKorm;
+
+    });
+
   }
   //Удаление из избранного 
   fav(id: number) {
@@ -30,7 +42,12 @@ export class BasketComponent implements OnInit {
       this.favService.faBtns[index] = true;
     }
 
-
   }
-  countKorm: number = 1
+  sum: number;
+  delete() {
+this.korm.splice(0,this.korm.length);
+this.ngOnInit();
+console.log(this.korm);
+  }
 }
+
